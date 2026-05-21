@@ -29,8 +29,8 @@ An end-to-end Machine Learning web application designed to predict the **Remaini
    ```
 
 3. **Access the services:**
-   - **Frontend Dashboard:** [http://localhost:5173](http://localhost:5173)
-   - **Backend API Docs:** [http://https://turbofan-backend.onrender.com/docs](http://https://turbofan-backend.onrender.com/docs)
+   - **Frontend Dashboard:** [https://predictive-maintenance-for-turbofan.vercel.app/](https://predictive-maintenance-for-turbofan.vercel.app/)
+   - **Backend API Docs:** [https://turbofan-backend.onrender.com/docs](https://turbofan-backend.onrender.com/docs)
 
 ## Project Structure
 - `/app` - FastAPI application, routers, services, ML inferences, and WebSocket managers.
