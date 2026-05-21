@@ -58,7 +58,7 @@ Watch the complete working demo here:
         > Due to WebSocket and cloud deployment limitations on free-tier hosting, the full real-time frontend dashboard is recommended to be run locally after cloning the repository.
    - **Backend API Docs:** [https://turbofan-backend.onrender.com/docs](https://turbofan-backend.onrender.com/docs)
   
-4. ## System Architecture
+## System Architecture
 
 ```text
 Sensor Stream Simulator
