@@ -53,7 +53,24 @@ Watch the complete working demo here:
 
 3. **Access the services:**
    - **Frontend Dashboard:** [https://predictive-maintenance-for-turbofan.vercel.app/](https://predictive-maintenance-for-turbofan.vercel.app/)
+        > **Note:**  
+        > The backend API is deployed and publicly accessible.  
+        > Due to WebSocket and cloud deployment limitations on free-tier hosting, the full real-time frontend dashboard is recommended to be run locally after cloning the repository.
    - **Backend API Docs:** [https://turbofan-backend.onrender.com/docs](https://turbofan-backend.onrender.com/docs)
+  
+4. ## System Architecture
+
+```text
+Sensor Stream Simulator
+          ↓
+     FastAPI Backend
+          ↓
+   ML Prediction Engine
+          ↓
+ WebSocket/API Broadcast
+          ↓
+ React Real-Time Dashboard
+```
 
 ## Project Structure
 - `/app` - FastAPI application, routers, services, ML inferences, and WebSocket managers.
@@ -61,6 +78,15 @@ Watch the complete working demo here:
 - `/models` - Trained ML models and preprocessing pipelines.
 - `/data` - Sample CMAPSS turbofan datasets.
 - `/notebooks` - Jupyter notebooks containing data exploration and model training logic.
+
+## Future Improvements
+
+- Kubernetes deployment for scalable streaming
+- Kafka integration for distributed telemetry ingestion
+- Grafana dashboards for advanced monitoring
+- AWS/GCP deployment pipelines
+- LSTM model optimization for higher prediction accuracy
+- Real-time alert notification system
 
 ## License
 This project is open-source and available under the [MIT License](LICENSE).
