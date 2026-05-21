@@ -15,6 +15,29 @@ An end-to-end Machine Learning web application designed to predict the **Remaini
 - **Frontend Real-Time UI:** React.js, Vite, WebSockets
 - **Infrastructure:** Docker, Docker Compose, Nginx
 
+## Application Screenshots
+
+### Predictive Maintenance Warning
+![Maintenance Warning](assets/screenshots/Maintenance-warning.png)
+
+### Healthy Engine Status Dashboard
+![Healthy Engine](assets/screenshots/Healthy-engine.png)
+
+### Engine Lifetime Prediction Graph
+![Lifetime Graph](assets/screenshots/Lifetime-graph.png)
+
+### Live Sensor Readings Visualization
+![Readings Graph](assets/screenshots/Readings-of-graph.png)
+
+### Critical Failure Alert System
+![Critical Alert](assets/screenshots/Critical-alert.png)
+
+## Demo Video
+
+Watch the complete working demo here:
+
+[Live Project Demo](https://drive.google.com/file/d/1U6BRN47KYP4rQi2Nt4CeHxSt1I93JeWX/view?usp=drive_link)
+
 ## Getting Started (Docker)
 
 1. **Clone the repository:**
