@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: turbofan-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      # Optional: Map the data folder if you want to swap datasets without rebuilding
+      - ./data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://https://turbofan-backend.onrender.com/ws/stats" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        # Defaults to internal docker network or localhost routing
+        VITE_WS_URL: wss://turbofan-backend.onrender.com/ws/live
+    container_name: turbofan-frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+    restart: unless-stopped

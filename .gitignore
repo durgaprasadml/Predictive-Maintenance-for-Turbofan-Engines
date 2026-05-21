@@ -1,0 +1,31 @@
+# Python & ML
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Project Data & Models
+data/*
+!data/train_FD001.txt
+
+/notebooks/
+
+# Frontend (React)
+node_modules/
+/frontend/node_modules/
+build/
+/frontend/build/
+dist/
+/frontend/dist/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store

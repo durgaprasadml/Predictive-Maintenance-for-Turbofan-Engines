@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-void: #0B0F19;
+  --color-panel: #111827;
+  --color-panel-border: #1F2937;
+  --color-accent: #06b6d4;
+  --color-accent-glow: rgba(6, 182, 212, 0.4);
+  --color-healthy: #10b981;
+  --color-warning: #f59e0b;
+  --color-critical: #ef4444;
+}
+
+@layer base {
+  body {
+    @apply bg-void text-gray-100 font-sans antialiased;
+    margin: 0;
+    overflow-x: hidden;
+  }
+}
